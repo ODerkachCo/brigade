@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'allerta_stencilregular';
+    src: url('./fonts/allertastencil-regular-webfont.woff2') format('woff2'),
+         url('./fonts/allertastencil-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body {
+	overflow-x: hidden;
+}
+body {
+	background: #646464;
+	margin: 0;
+	padding: 0;
+}
+.brigade__container {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.brigade__header {
+	position: relative;
+	height: 100vh;
+	background-image: url("./imgs/boardcontrol_photo_yurasov(aerotim) 224.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.brigade__logo:hover {
+	cursor: pointer;
+}
+.brigade__logo--pic {
+	position: absolute;
+	top: 10px;
+	left: 32px;
+	background-image: url("./imgs/logo.png");
+	height: 40px;
+	width: 40px;
+}
+.brigade__logo--text {
+	position: absolute;
+	left: 80px;
+	top: 14px;
+	font-size: 14px;
+	line-height: 17px;
+	color: green;
+	font-weight: 700;
+	font-family: Jura, sans-serif;
+	text-transform: uppercase;
+}
+.brigade__title {
+	font-size: 46px;
+	color: #016d46;
+	position: absolute;
+	left: 10%;
+	top: 66%;
+	transform: translate(-10%, -66%);
+	line-height: 100%;
+	font-weight: 700;
+}
+.brigade__title span:nth-child(1) {
+	font-family: 'allerta_stencilregular' sans-serif;
+	font-size: 46px;
+	color: #016d46;
+}
+.brigade__title span:nth-child(2) {
+	font-size: 24px;
+	color: #000;
+	font-weight: 100;
+}
+.brigade__anketa--btn {
+	position: absolute;
+	display: flex;
+	top: 97%;
+	left: 3%;
+	transform: translate(-3%, -97%);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	border: 8px solid #F0971F;
+	background: #42DACE;
+	box-shadow: 0px 0px 5px 5px rgba(224,215,224,1);
+}
+.brigade__anketa--btn span:nth-child(1) {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-weight: 700;
+	font-size: 16px;
+}
+.brigade__anketa--btn span:nth-child(2) {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	text-transform: uppercase;
+}
+.brigade__anketa--btn:hover {
+	cursor: pointer;
+}
+.brigade__info {
+	position: relative;
+	min-height: 100vh;
+	background: #b1b5b9;
+}
+.brigade__contact {
+
+	background: green;
+}
+.brigade__description {
+	position: absolute;
+	top: 110%;
+	left: 58%;
+	font-weight: 600;
+	transform: translate(-50%, -80%);
+	font-size: 14px;
+	color: #1b3614;
+	padding: 5px 10px 5px 10px;
+	border-radius: 4px;
+	text-align: justify;
+}
+.slider {
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	display: flex;
+	overflow: hidden;
+}
+.slider_line {
+	display: flex;	
+	position: fixed;
+	left: 0;
+	transition: all ease 1s;
+}
+
+.btn_next {
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	transform: translate(-90%, -50%) rotate(45deg);
+	border-top: 5px solid green;
+	border-right: 5px solid green;
+}
+.btn_next:hover {
+	cursor: pointer;
+}
+.btn_prev {
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-10%, -50%) rotate(-45deg);
+	border-top: 5px solid green;
+	border-left: 5px solid green;
+}
+.btn_prev:hover {
+	cursor: pointer;
+}
+.slider__text {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	padding: 10px;
+	transform: translate(-50%, -90%);
+}
+@media screen and (max-width: 1450px) {
+	.slider {
+		width: calc(240px + 100vw - 1024px);
+		height: calc(320px + 100vw - 1024px);
+	}
+	/*
+	.btn_next {
+		top: 90%;
+		transform: translateY(-90%) rotate(45deg);
+	}
+	.btn_prev {
+		top: 90%;
+		transform: translateY(-90%) rotate(-45deg);
+	}
+	*/
+}
